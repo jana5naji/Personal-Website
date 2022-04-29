@@ -9,14 +9,14 @@
 }
 
 header {
-    background-color: black;
+   background-color: black;
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 80px;
+    padding: 1px 80px;
     
 }
 
@@ -26,18 +26,17 @@ header {
     color: white;
     text-transform: none;
     font-weight: bold;
-    font-size: 1.8em;
-    letter-spacing: 0.5cm;
+    font-size: 2em;
+    padding: 5px;
     font-family: 'Bradley Hand ITC',  serif;
-    
 }
 
 .navigation a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
-    padding-left: 20px;
+    font-size: 1.5em;
+    padding-left: 30px;
     font-family: 'Bradley Hand ITC',  serif;
    
 }
@@ -50,62 +49,28 @@ section{
     padding: 100px 200px;
 }
 
-.main{
-    width:100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(nk10.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-     
-}
 
-.main-btn{
-    color:black;
-    background-color: wheat;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px ;
-    border-radius: 13px;
-    margin-bottom: 30px;
-    transition: 0.7s ease;
-    font-family: 'Bradley Hand ITC',  serif;
-}
-
-.main-btn:hover {
-    background-color: whitesmoke;
-    transform: scale(1.05);
-    
-}
 
 .social-icons a {
-    color: white;
+    color: black;
     font-size: 1.7em;
     padding-right: 20px;
     
 }
-.title{
+
+.main{
+    width:100%;
+     height: 100vh;
     display: flex;
-    justify-content: center;
-    color: black;
-    font-weight: 700;
-    font-size: 1.1em;
-    font-style: initial;
-    letter-spacing: 0.5cm;
-    margin-bottom: 30px;
-    font-family: 'Bradley Hand ITC',  serif;
-    
+    align-items: center;
+    background: url(jananaji.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+   
 }
- 
-.about {
-    background-color: white;
-}
- .about .content {
+
+.about .content {
     
     display: flex;
     justify-content: center;
@@ -114,12 +79,25 @@ section{
      flex-wrap: wrap;
      font-size: 1.5em;
  }
- h2{
+ .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px ;
+ }
+
+
+h2{
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    color: wheat;
+    color: rgb(0, 0, 0);
+    font-family: 'Bradley Hand ITC',  serif;
 }
+
 h2:after{
     content: "";
     position: absolute;
@@ -127,68 +105,105 @@ h2:after{
     bottom: 0;
     transform: translate(-50%);
     height: 4px;
-    width: 50px;
+    width: 30px;
     border-radius: 2px;
     background-color: wheat;
+    
 }
 
-.container{
-    position: relative;
+
+ 
+.row{
+    position: center;
+    display: flex;
+   font-size: 1.1em;
+    align-items: center;
+    padding:8px 10px ;
+    color: black;
+    text-decoration: none;
+}
+
+.row:hover{
+    color: wheat;
+}
+
+ 
+.skills .content{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px ;
-}
-.about-box{
-    max-width: 950px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center ;
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-}
-.left{
-    height: 100%;
-    background: url("nk2.jpg") no-repeat center;
-    background-size: cover;
+    margin-top: 25px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-size: 1.5em;
+     
 }
 
-.right{
-   padding: 25px 40px;
+ 
+.media .content{
+     display: flex;
+    justify-content: center;
+    margin-top: 25px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-size: 1.5em;
 }
- 
- 
-.footer {
-    background-color: black;
-    color: white;
-    padding: 10px 100px;
+
+#repo .content{
     display: flex;
-    justify-content: space-between;
-    font-size: 0.7em;
-
+    justify-content: center;
+    margin-top: 25px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-size: 1.5em;
 }
-.social-icons a {
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
     color: white;
-    font-size: 1.4em;
-    padding-right: 10px;
+    text-align: center;
+    padding: 10px 20px;
+     
 }
 
-@media (max-width: 576px) {
-    header {
-        padding: 9px 15px;
-    }
+.email{
+    text-decoration: none;
+    color: white;
+}
+.email:hover{
+    color: wheat;
+}
+ 
+ @media (max-width: 576px) { 
+    header{
+       padding: 1px 80px ;
+     }
 
-    .navigation a{
-        padding-left: 5px;
-    }
-
-    .title {
+     .logo{
+         font-size: 1.5em;
+     }
+     .navigation {
+         font-size: 1em;
+     }
+    
+    .about .content{
         font-size: 1.2em;
     }
-}
+     
+
+    .media .content{
+        font-size: 1em;
+    }
+    #repo .content{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 1px 80px ;
+    }
+ }
+
+  
 
  
